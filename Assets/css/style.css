@@ -83,8 +83,31 @@ h2 {
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(28, 26, 26, 0.6);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(144, 227, 45, 0.6);
+  transition: transform 150ms;
+  transform: scale(1.03);
 }
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#highscore-btn {
+  background: linear-gradient(90deg, rgb(231, 185, 229) 0%, rgb(231, 185, 229) 100%);
+}
+
+#highscore-btn:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(198, 99, 195,0.5);
+}
+
+.fa-crown {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+
+
 /* *, *::before, *::after {
     box-sizing: border-box;
     font-family: Ariel, Helvetica, sans-serif;
