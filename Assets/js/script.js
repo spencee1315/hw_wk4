@@ -85,7 +85,7 @@ const questions = [
         question: "What is Javascript?",
         answers: [
             { text: 'A scripting language that enables you to create dynamically updating content, control multimedia, animate images, and more.', correct: true },
-            { text: 'A language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.', correct: false }
+            { text: 'A language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.', correct: false },
             { text: 'The markup language that we use to structure and give meaning to our web content.', correct: false },
             { text: 'The native language of the island of Java.', correct: false },
         ]
