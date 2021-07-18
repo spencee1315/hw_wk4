@@ -82,10 +82,12 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: "What is 2 + 2?",
+        question: "What is Javascript?",
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
+            { text: 'A scripting language that enables you to create dynamically updating content, control multimedia, animate images, and more.', correct: true },
+            { text: 'A language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.', correct: false }
+            { text: 'The markup language that we use to structure and give meaning to our web content.', correct: false },
+            { text: 'The native language of the island of Java.', correct: false },
         ]
     },
     { 
@@ -98,38 +100,38 @@ const questions = [
         ]
     },
     { 
-        question: 'Is web development fun?',
+        question: 'How do you call an external Javascript file named, "script.js"?',
         answers: [
-            { text: 'Kinda', correct: false },
-            { text: 'YES!!!', corret: true },
-            { text: 'No way!', correct: false },
+            { text: '<script src="script.js"></script>', correct: true },
+            { text: '<script src="index.html"></script>', corret: false },
+            { text: '<script src="styles.css"></script>', correct: false },
+            { text: '<script src=myscript.js></script>', correct: false },
+        ]
+    },
+    { 
+        question: 'What is an array?',
+        answers: [
+            { text: 'Arrays are generally described as "list-like objects"', correct: true },
+            { text: 'Arrays are basically single objects that contain multiple values stored in a list.', corret: true },
+            { text: 'let sequence = [1, 1, 2, 3, 5, 8, 13];', correct: true },
+            { text: 'let random = ["tree", 795, [0, 1, 2]];', correct: true },
+        ]
+    },
+    { 
+        question: 'What is a variable?',
+        answers: [
+            { text: 'Variables are not the values themselves; they are containers for values.', correct: true },
+            { text: 'You can think of them being like little cardboard boxes that you can store things in.', corret: true },
+            { text: 'A variable is a container for a value.', correct: true },
             { text: 'IDK', correct: false },
         ]
     },
     { 
-        question: 'Is web development fun?',
+        question: 'What is an object?',
         answers: [
-            { text: 'Kinda', correct: false },
-            { text: 'YES!!!', corret: true },
-            { text: 'No way!', correct: false },
-            { text: 'IDK', correct: false },
-        ]
-    },
-    { 
-        question: 'Is web development fun?',
-        answers: [
-            { text: 'Kinda', correct: false },
-            { text: 'YES!!!', corret: true },
-            { text: 'No way!', correct: false },
-            { text: 'IDK', correct: false },
-        ]
-    },
-    { 
-        question: 'Is web development fun?',
-        answers: [
-            { text: 'Kinda', correct: false },
-            { text: 'YES!!!', corret: true },
-            { text: 'No way!', correct: false },
+            { text: 'An object is a collection of related data and/or functionality.', correct: true },
+            { text: 'It is the same thing as a function.', corret: false },
+            { text: 'It is the same thing as a method.', correct: false },
             { text: 'IDK', correct: false },
         ]
     }
