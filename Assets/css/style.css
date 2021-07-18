@@ -74,6 +74,24 @@ body.wrong {
     padding: 10px 20px;
 }
 
+.large-font {
+    font-size: 3.5em;
+    text-align:center;
+  }
+
+  .timer {
+    height: 240px;
+    padding: 10px;
+    background: #13293d;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .timer-text {
+    padding: 55px;
+  }
+
+
 .controls {
     display: flex;
     justify-content: center;
@@ -83,6 +101,8 @@ body.wrong {
 .hide {
     display: none;
 }
+
+
 /* * {
     box-sizing: border-box;
   }
