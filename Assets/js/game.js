@@ -12,7 +12,7 @@ let availableQuestions = []
 
 let questions = [
     {
-     question: "What is Javascript?",
+     question: 'What is Javascript?',
      choice1:'A scripting language that enables you to create dynamically updating content, control multimedia, animate images, and more.',
      choice2:'The native language of the island of Java.',
      choice3:'The first words I speak every morning.',
@@ -36,15 +36,15 @@ let questions = [
         answer: 2,
        },
        {
-        question: "What is Javascript?",
-        choice1:'A scripting language that enables you to create dynamically updating content, control multimedia, animate images, and more.',
-        choice2:'The native language of the island of Java.',
-        choice3:'The first words I speak every morning.',
-        choice4:'IDK',
-        answer: 1,
+        question: 'What is a variable?',
+        choice1:'Variables are both the values themselves and they are containers for values.',
+        choice2:'You can think of them being like little cardboard boxes that you can store things in.',
+        choice3:'A variable is NOT a container for a value.',
+        choice4:'The amount of sleep I get.',
+        answer: 2,
        },
        {
-        question: "What is an object",
+        question: 'What is an object',
         choice1:'It is the same thing as a function.',
         choice2:'It is the same thing as a method.',
         choice3:'An object is a collection of related data and/or functionality.',
