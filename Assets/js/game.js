@@ -22,7 +22,7 @@ let questions = [
     {
         question: 'What is an array?',
         choice1:'Sun light shinning through the window.',
-        choice2:'Arrays are basically single objects that cannot contain multiple values stored in a list.',
+        choice2:'Arrays are basically single objects that CANNOT contain multiple values stored in a list.',
         choice3:'The first words I speak every morning.',
         choice4:'Arrays are generally described as "list-like objects"',
         answer: 4,
@@ -55,6 +55,17 @@ let questions = [
 
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 5
+
+function timer(){
+    var sec = 10;
+    var timer = setInterval(function(){
+        document.getElementById('timer-count').innerHTML=''+sec;
+        sec--;
+        if (sec < 0) {
+            clearInterval(timer);
+        }
+    }, 1000);
+}
 
 startGame = () => {
     questionCounter = 0
