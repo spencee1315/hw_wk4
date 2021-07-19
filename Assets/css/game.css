@@ -68,20 +68,16 @@ body {
     width: 0%;
 }
 
-/* .timer {
-    width: 10rem;
-    height: 3rem;
+.timer {
+    width: 15rem;
+    height: 10rem;
     border: 0.2rem solid rgb(198, 99, 195);
-    margin-top: 2rem;
-    border-radius: 50px;
+    border-radius: 10px;
     overflow: hidden;
     color: seashell;
-  }
-
-  .timer-text {
     text-align: center;
-    font-size: 2rem;
-  } */
+    font-size: 3rem;
+  }
 
 @media screen and (max-width: 768px) {
     .choice-container {
