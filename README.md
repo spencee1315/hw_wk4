@@ -1,6 +1,6 @@
-# 04 Web APIs: Code Quiz
+# Code Quiz - Homework 4, UW Coding Bootcamp
 
-## Your Task
+## Description
 
 At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
 
@@ -8,7 +8,7 @@ To help familiarize you with these tests and allow you to use the skills covered
 
 This week’s coursework will equip you with all the skills you need to succeed in this assignment.
 
-## User Story
+## Built Item
 
 ```
 AS A coding boot camp student
@@ -16,7 +16,7 @@ I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 ```
 
-## Acceptance Criteria
+## Deployed Link
 
 ```
 GIVEN I am taking a code quiz
@@ -32,15 +32,16 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 
-## Mock-Up
+## Preview of Working Site
 
 The following animation demonstrates the application functionality:
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/homepage.png)
 
-## Grading Requirements
+## Code Snippet
+This code snippet...........
 
-This homework is graded based on the following criteria: 
+```javascript 
 
 ### Technical Acceptance Criteria: 40%
 
@@ -56,34 +57,16 @@ This homework is graded based on the following criteria:
 
 * GitHub repository contains application code.
 
-### Application Quality: 15%
+```
 
-* Application user experience is intuitive and easy to navigate.
+### Authors
 
-* Application user interface style is clean and polished.
+* **Elliott Spencer**
 
-* Application resembles the mock-up functionality provided in the homework instructions.
+### Contact Information
 
-### Repository Quality: 13%
+* [Link to Portfolio Site](#)
 
-* Repository has a unique name.
+* [Link to Github](#)
 
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+* [Link to LinkedIn](#)
