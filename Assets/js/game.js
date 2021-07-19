@@ -10,6 +10,8 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
+// Game questions
+
 let questions = [
     {
      question: 'What is Javascript?',
@@ -56,16 +58,24 @@ let questions = [
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 5
 
+// Timer
+
+let sec 
 function timer(){
-    var sec = 10;
-    var timer = setInterval(function(){
-        document.getElementById('timer-count').innerHTML=''+sec;
+    sec = 10;
+    const timer = setInterval(function(){
         sec--;
+        document.getElementById('timer-count').innerHTML=''+sec;
         if (sec < 0) {
-            clearInterval(timer);
+            // clearInterval(timer);
+            getNewQuestion();
         }
     }, 1000);
 }
+
+timer()
+
+// Game
 
 startGame = () => {
     questionCounter = 0
@@ -97,6 +107,8 @@ getNewQuestion = () => {
     availableQuestions.splice(questionsIndex, 1)
 
     acceptingAnswers = true
+    sec = 10;
+    document.getElementById('timer-count').innerHTML=''+sec;
 }
 
 choices.forEach(choice => {
