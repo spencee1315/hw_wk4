@@ -2,61 +2,41 @@
 
 ## Description
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+For the fourth week of the UW Coding Bootcamp my homework invited me to build a timed coding quiz with multiple-choice questions. The app I built runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean, polished, and responsive user interface and includes a count down timer, a results page to save your score, and a highscores page which will track the top 5 heighest scores using local storage.
 
-To help familiarize you with these tests and allow you to use the skills covered in this unit, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+## Built With
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
-
-## Built Item
-
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+* [HTML](https://github.com/spencee1315/hw_wk4)
 
 ## Deployed Link
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+* [See Live Site](https://spencee1315.github.io/hw_wk4/)
 
 ## Preview of Working Site
 
-The following animation demonstrates the application functionality:
-
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/homepage.png)
+![Image](./Assets/homepage.png)
 
 ## Code Snippet
 This code snippet...........
 
 ```javascript 
 
-### Technical Acceptance Criteria: 40%
+// Timer - will load on page load (once the start button is clicked on the index page) and start the countdown of the first question
+// Global Variable, setting outside timer function to call it in the getNewQuestion function
+let sec 
+function timer(){
+    sec = 10;
+    const timer = setInterval(function(){
+        sec--;
+        document.getElementById('timer-count').innerHTML=''+sec;
+        if (sec < 0) {
+            // Advances to new question at -1, so zero will populate on screen
+            getNewQuestion();
+        }
+    }, 1000);
+}
 
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
+timer()
 ```
 
 ### Authors
@@ -65,8 +45,8 @@ This code snippet...........
 
 ### Contact Information
 
-* [Link to Portfolio Site](#)
+* [Link to Portfolio Site](https://spencee1315.github.io/hw_wk2/)
 
-* [Link to Github](#)
+* [Link to Github](https://github.com/spencee1315)
 
-* [Link to LinkedIn](#)
+* [Link to LinkedIn](https://www.linkedin.com/in/elliott-spencer-886a9818/)

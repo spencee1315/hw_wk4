@@ -1,3 +1,4 @@
+// Chose const/let declarations for a more blocked scope, const will initialize during declaration, let will be initialized later
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
@@ -11,7 +12,7 @@ let questionCounter = 0
 let availableQuestions = []
 
 // Game questions
-
+// Creating an array of questions, where answer is set to the choice number as dictated in the game html
 let questions = [
     {
      question: 'What is Javascript?',
@@ -55,11 +56,12 @@ let questions = [
        },
 ]
 
+// Global Key Variables
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 5
 
-// Timer
-
+// Timer - will load on page load (once the start button is clicked on the index page) and start the countdown of the first question
+// Global Variable, setting outside timer function to call it in the getNewQuestion function
 let sec 
 function timer(){
     sec = 10;
@@ -67,7 +69,7 @@ function timer(){
         sec--;
         document.getElementById('timer-count').innerHTML=''+sec;
         if (sec < 0) {
-            // clearInterval(timer);
+            // Advances to new question at -1, so zero will populate on screen
             getNewQuestion();
         }
     }, 1000);
@@ -76,7 +78,7 @@ function timer(){
 timer()
 
 // Game
-
+// Initializing let variables
 startGame = () => {
     questionCounter = 0
     score = 0
@@ -84,6 +86,7 @@ startGame = () => {
     getNewQuestion()
 }
 
+// Advancing to new question
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore', score)
@@ -107,10 +110,11 @@ getNewQuestion = () => {
     availableQuestions.splice(questionsIndex, 1)
 
     acceptingAnswers = true
+    // Resetting timer on the advance to new question
     sec = 10;
     document.getElementById('timer-count').innerHTML=''+sec;
 }
-
+// Setting listener for each choice
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return
@@ -133,7 +137,7 @@ choices.forEach(choice => {
         }, 1000)
     })
 })
-
+//Adding the score
 incrementScore = num => {
     score +=num
     scoreText.innerText = score
