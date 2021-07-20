@@ -14,7 +14,10 @@ For the fourth week of the UW Coding Bootcamp my homework invited me to build a 
 
 ## Preview of Working Site
 
-![Image](./Assets/homepage.png)
+![Image1](./Assets/homepage.png)
+![Image2](./Assets/gamepage.png)
+![Image3](./Assets/resultspage.png)
+![Image4](./Assets/leaderboard.png)
 
 ## Code Snippet
 This code snippet...........
