@@ -8,15 +8,18 @@
     <script src="https://kit.fontawesome.com/d5e3f9b5d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Creating container to list final score, allow user to enter/save name, using local storage -->
     <div class="container">
         <div id="end" class="flex-center flex-column">
             <h1 id="finalScore">0</h1>
             <form class="end-form-container">
                 <h2 id="end-text">Enter your name below to save your score!</h2>
                 <input type="text" name="name" id="username" placeholder="Enter your name here">
+                <!-- Button will be disabled until something is typed in the name field -->
                 <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
             </form>
             <a href="/game.html" class="btn">Play Again</a>
+            <!-- link to index page -->
             <a href="/" class="btn">Go Home <i class="fas fa-home"></i></a>
         </div>
     </div>
